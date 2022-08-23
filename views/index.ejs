@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> <%= title %>  </title>
+    
+    <link rel="shortcut icon" href="img/favicon.png">
+    
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div>
+        <h4>Hello here </h4>
+
+        <form action="/download" method="post">
+            <input type="text" name="yt-url" class="form-control" required placeholder="Enter Youtube download link">
+            <button type="submit" class="btn btn-primary">Download Video</button>
+        </form>
+        <br>
+        <div class="text-danger error-text">
+            <h5>Please enter valid URl!</h5>
+        </div>
+    </div>
+
+    <!-- js files -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+</body>
+</html>

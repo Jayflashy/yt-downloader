@@ -7,9 +7,11 @@ router.get('/', (req, res) => {
 })
 router.post('/download', (req, res) => {
     // get video link
-    const vlink = req.body.link
+    let vlink = req.body.link
     console.log(vlink)
     // perform donload oop
-    res.send('Okay dhjl')
+    const info =  ytdl.getInfo(vlink) ;
+    console.log(info); 
+    res.send("HGefttinhg inefo")
 })
 module.exports = router
